@@ -1,4 +1,13 @@
 TradingDiary::Application.routes.draw do
+  resources :users
+
+
+  resources :trades
+
+
+  resources :holdings
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
