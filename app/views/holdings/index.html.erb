@@ -1,0 +1,33 @@
+<h1>Listing holdings</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Purchase date</th>
+    <th>Company</th>
+    <th>Quantity</th>
+    <th>Avg price</th>
+    <th>Date sold</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @holdings.each do |holding| %>
+  <tr>
+    <td><%= holding.user_id %></td>
+    <td><%= holding.purchase_date %></td>
+    <td><%= holding.company_id %></td>
+    <td><%= holding.quantity %></td>
+    <td><%= holding.avg_price %></td>
+    <td><%= holding.date_sold %></td>
+    <td><%= link_to 'Show', holding %></td>
+    <td><%= link_to 'Edit', edit_holding_path(holding) %></td>
+    <td><%= link_to 'Destroy', holding, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Holding', new_holding_path %>

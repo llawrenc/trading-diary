@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @holding.user_id %>
+</p>
+
+<p>
+  <b>Purchase date:</b>
+  <%= @holding.purchase_date %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @holding.company_id %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @holding.quantity %>
+</p>
+
+<p>
+  <b>Avg price:</b>
+  <%= @holding.avg_price %>
+</p>
+
+<p>
+  <b>Date sold:</b>
+  <%= @holding.date_sold %>
+</p>
+
+
+<%= link_to 'Edit', edit_holding_path(@holding) %> |
+<%= link_to 'Back', holdings_path %>

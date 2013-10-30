@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @trade.user_id %>
+</p>
+
+<p>
+  <b>Trade date:</b>
+  <%= @trade.trade_date %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @trade.company_id %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @trade.quantity %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @trade.type %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @trade.price %>
+</p>
+
+<p>
+  <b>Brokerage:</b>
+  <%= @trade.brokerage %>
+</p>
+
+
+<%= link_to 'Edit', edit_trade_path(@trade) %> |
+<%= link_to 'Back', trades_path %>
